@@ -1,0 +1,117 @@
+@import 'mixins';
+div.carousel{
+	@include centeredflex(row);
+	background-color: $header-bg;
+	height: 50vh;
+	width:100%;
+	border-bottom: 0.3rem solid $text-bg;
+
+	.arrow{
+		color:$bg-beige;
+		padding: 1rem;
+		text-shadow: 1px 1px 0.5rem $dot-shadow; 
+	}
+
+	.arrow:hover{
+		color: $dot-hover;
+	}
+
+	.arrow:active{
+		color: $dot-active;
+	}
+
+	.column{
+		@include centeredflex(column);
+	}
+	
+	.card{
+		height: 42vh;
+		width: 50vw;
+		text-align: center;
+		background-color: $bg-beige;
+		font-family: 'Rancho', sans-serif;
+		color: $text;
+		box-shadow: 0 0 3rem 0.2rem $carousel-shadow;
+		border-radius: 1rem;
+
+		h1{
+			margin:0;
+			text-shadow: 0.3rem 0.3rem $text-bg;
+			font-size: 5rem;
+			padding:0;
+		}
+		h3{
+			margin:0;
+			text-shadow: 0.15rem 0.15rem $text-bg;
+			font-size: 2rem;
+			padding-bottom: 1rem;
+		}
+		p{
+			margin:0;
+			font-size: 1.5rem;
+			text-shadow: 0.1rem 0.1rem $text-bg;
+		}
+		button{
+			font-family: 'Rancho', sans-serif;
+			background-color: $text-bg;
+			color: $text;
+			font-size: 2rem;
+			border: 0.4rem solid $header-bg;
+			border-radius: 1rem;
+			padding: 0.2rem 2rem;
+		}
+		button:hover{
+			background-color: $btn-hov;
+		}
+		button:active{
+			padding: 0 1.8rem;
+		}
+	}
+
+	#welcome{
+		@include centeredflex(column);
+		p{
+			padding-bottom: 1rem;
+		}
+	}
+
+	#offer{
+		@include centeredflex(column);
+	}
+
+	#visit{
+		@include centeredflex(column);
+		line-height: 3.5rem;
+		ul{
+			line-height: 2rem;
+			text-shadow: 2px 2px 0 $text-bg;
+			font-size: 2rem;
+			padding:0;
+			margin: 0;
+			margin-bottom: 1rem;
+		}
+		li{
+			list-style-position: inside;
+			margin:0;
+			padding:0;
+		}
+	}
+
+	.dot{
+		margin: 1rem 1rem 0 1rem;
+		color: $bg-beige;
+		text-shadow: 1px 1px 0.5rem $dot-shadow;
+		
+	}
+	.pressed{
+		color: $dot-active;
+	}
+
+	.dot:hover{
+		color: $dot-hover;
+	}
+
+	.pressed:hover{
+		color: $dot-active;
+	}
+}

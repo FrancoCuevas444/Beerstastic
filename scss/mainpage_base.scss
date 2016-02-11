@@ -1,0 +1,16 @@
+@import 'modules/color';
+@import 'modules/nav';
+@import 'modules/mixins';
+@import 'modules/carousel';
+@import 'modules/info';
+@import 'modules/footer ';
+
+body{
+	margin:0;
+	background-color: $body-bg;
+}
+a{
+	text-decoration: none;
+	color:$text;
+}
+

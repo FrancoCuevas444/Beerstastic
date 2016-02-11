@@ -1,0 +1,16 @@
+{
+  "name": "modern",
+  "version": "1.0.0",
+  "description": "A modern-looking website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Franco Cuevas",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^2.1.1"
+  }
+}

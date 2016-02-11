@@ -1,0 +1,7 @@
+footer{
+	@include centeredflex(row);
+	font-family: 'Raleway', sans-serif;
+	background-color: $header-bg;
+	color: $text;
+	font-size: 0.6rem;
+}

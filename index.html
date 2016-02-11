@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./css/mainpage_base.css">
+	<link rel="stylesheet" href="./css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Rancho' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+	<title>Beerstastic</title>
+</head>
+<body>
+	<nav>
+		<h1><a href="/">Beerstastic!</a></h1>
+		<ul>
+			<li><a href="/beer">BEER</a></li>
+			<li><a href="/distrib">DISTRIBUTORS</a></li>
+			<li><a href="/about">ABOUT</a></li>
+			<li><a href="/contact">CONTACT</a></li>
+		</ul>
+	</nav>
+	<div class="carousel">
+		<i class="fa fa-angle-left fa-5x arrow" id = "back"></i>
+		<div class="column">
+
+			<div class="card" id="welcome">
+				<span class="firstCard visible">
+					<h1>Welcome to Beerstastic!</h1>
+					<h3>Only the finest beer!</h3>
+					<p>We offer all kinds of beers with the best quality on the market and the most competitive prices.</p>
+					<div>
+						<a href="/beer"><button>See beers!</button></a>
+						<a href="/about"><button>Learn more</button></a>
+					</div>
+				</span>
+
+				<span class="secondCard">
+					<h1>Amazing offers!</h1>
+					<h3>Buy 10lt of any of the beers for 20%... or 50lt for 30%...<br>...or 100lt for a 50% discount!</h3>
+					<a href="/beer"><button>Take me there!</button></a>
+				</span>
+
+				<span class="thirdCard">
+					<h1>Come visit us!</h1>
+					<h3>Come to our factories to learn and have fun!</h3>
+				
+					<ul>
+						<li>We'll guide you through the entire facility</li>
+						<li>You'll be able to try all of our beers</li>
+						<li>Finally you'll get acces to an amazing park!</li>
+					</ul>
+				<a href="/contact"><button>More info!</button></a>
+				</span>
+			</div>
+
+			<div class="dots">
+				<i class="fa fa-circle fa-lg dot pressed" id="first"></i>
+				<i class="fa fa-circle fa-lg dot" id="second"></i>
+				<i class="fa fa-circle fa-lg dot" id="third"></i>
+			</div>
+
+		</div>
+			
+			<i class="fa fa-angle-right fa-5x arrow" id="next"></i>
+			
+	</div>
+	<div class="info">
+		<div class="block">
+			<div class="round">
+				<i class="fa fa-check fa-5x beer"></i>
+				<p>Quality</p>
+			</div>
+			<p>We guaratee the best quality on the market, from the natural cultivated seeds to the whole fermenting process.</p>
+		</div>
+		<div class="block">
+			<div class="round">
+				<i class="fa fa-balance-scale fa-4x beer"></i>
+				<p>Experience</p>
+			</div>
+			<p>Having more than 30 years on the market, you have the enssurance that our brand works professionally.</p>
+		</div>
+		<div class="block">
+			<div class="round">
+				<i class="fa fa-beer fa-5x beer"></i>
+				<p>Variety</p>
+			</div>
+			<p>We don't offer one kind of beer only, we realize that people have differents likes so we have five lines of beer. Find which one is for you.</p>
+		</div>
+
+	</div>
+
+	<footer>
+		<h2>&copy Copyright 2016 Beerstastic</h2>
+	</footer>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/main.js"></script>
+	
+</body>
+</html>

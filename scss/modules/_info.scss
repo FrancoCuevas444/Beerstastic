@@ -1,0 +1,35 @@
+div.info{
+	@include centeredflex(row);
+	margin-top: 2rem;
+	font-family: 'Raleway', sans-serif;
+	color: $bg-red;
+	border-bottom: 0.3rem solid $text-bg;
+	padding-bottom: 5vh;
+	.block{
+		@include centeredflex(column);
+		width: 20vw;
+		text-align: center;
+		margin: 0 1rem;
+	}
+	.round{
+		@include centeredflex(column);
+		width: 10vw;
+		height:10vw;
+		border: 2.5px solid $bg-red;
+		font-weight: 700;
+		border-radius: 100%;
+		p{
+			margin:0;
+			padding:0;
+			text-align: center;
+
+		}
+	}
+	.beer{
+		text-align: center;
+		margin:0;
+		line-height: 4rem;
+		
+	}
+
+}
